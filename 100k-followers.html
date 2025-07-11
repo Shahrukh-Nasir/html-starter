@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive Worksheet: The Blueprint to 100k Followers</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+body {
+font-family: 'Inter', sans-serif;
+background-color: #f0f4f8;
+}
+.main-container {
+max-width: 800px;
+margin: auto;
+}
+.card {
+background-color: white;
+border-radius: 1rem;
+padding: 2rem;
+margin-bottom: 2rem;
+box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.05), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+transition: all 0.3s ease-in-out;
+}
+.card-header {
+font-size: 1.5rem;
+font-weight: 700;
+margin-bottom: 1rem;
+display: flex;
+align-items: center;
+}
+.gradient-text {
+background: -webkit-linear-gradient(45deg, #1e40af, #3b82f6);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.quiz-option {
+border: 1px solid #e5e7eb;
+padding: 1rem;
+border-radius: 0.5rem;
+cursor: pointer;
+transition: all 0.2s ease-in-out;
+display: flex;
+align-items: center;
+margin-bottom: 0.75rem;
+}
+.quiz-option:hover {
+background-color: #f9fafb;
+border-color: #d1d5db;
+}
+.quiz-option.correct {
+background-color: #dcfce7;
+border-color: #22c55e;
+color: #166534;
+}
+.quiz-option.incorrect {
+background-color: #fee2e2;
+border-color: #ef4444;
+color: #991b1b;
+}
+.quiz-icon {
+margin-right: 0.75rem;
+width: 24px;
+height: 24px;
+font-size: 1.5rem;
+line-height: 1;
+}
+.goal-button {
+background-color: #2563eb;
+color: white;
+font-weight: 600;
+padding: 0.75rem 1.5rem;
+border-radius: 0.5rem;
+border: none;
+cursor: pointer;
+transition: all 0.3s ease;
+display: inline-flex;
+align-items: center;
+gap: 0.5rem;
+}
+.goal-button:hover {
+background-color: #1d4ed8;
+transform: translateY(-2px);
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.goal-button.set {
+background-color: #16a34a;
+cursor: default;
+}
+.goal-button.set:hover {
+background-color: #15803d;
+transform: none;
+}
+</style>
+</head>
+<body class="text-gray-800 p-4 sm:p-8">
+
+<div class="main-container">
+    <header class="text-center mb-12">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900">The Blueprint to 100k Followers 🚀</h1>
+        <p class="text-lg text-gray-600 mt-4">An interactive worksheet for the next stage of your creator journey.</p>
+    </header>
+
+    <section class="card">
+        <h2 class="card-header">
+            <span class="mr-3 text-2xl">🎯</span>
+            <span class="gradient-text">1. Set Your Sights: 10k to 100k</span>
+        </h2>
+        <p class="text-gray-600 mb-6">You've hit 10k followers by learning the key principles. It's time to build on that foundation. The strategies in this worksheet will boost your growth exponentially. This is where real monetization becomes a reality. Let's get started!</p>
+        <div class="text-center">
+            <button id="goalButton" class="goal-button">
+                <span id="button-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </span>
+                <span id="button-text">Set My Goal to 100k!</span>
+            </button>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2 class="card-header">
+            <span class="mr-3 text-2xl">🤝</span>
+            <span class="gradient-text">2. The Power of Collaboration</span>
+        </h2>
+        <p class="text-gray-600 mb-6">With 10k followers, you have the credibility to collaborate. Strategic collaborations are one of the most powerful growth hacks available. Remember to think beyond your immediate niche. Consider what other content your ideal viewer is watching.</p>
+        <h3 class="font-semibold text-lg mb-4">Interactive Challenge: Who Should You Collaborate With?</h3>
+        <p class="text-gray-600 mb-4">Imagine you're a <strong class="font-semibold text-gray-900">Fitness Influencer</strong> who posts workout routines. Which of the following creators would be a strategic collaboration?</p>
+        <div id="collab-quiz">
+            <div class="quiz-option" data-correct="true"><div class="quiz-icon"></div> A Healthy Meal-Prep Chef</div>
+            <div class="quiz-option" data-correct="false"><div class="quiz-icon"></div> A Movie Reviewer</div>
+            <div class="quiz-option" data-correct="true"><div class="quiz-icon"></div> A Physiotherapist sharing injury prevention tips</div>
+            <div class="quiz-option" data-correct="true"><div class="quiz-icon"></div> A creator focused on workout clothing & gear</div>
+            <div class="quiz-option" data-correct="false"><div class="quiz-icon"></div> A creator who live-streams video games</div>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2 class="card-header">
+            <span class="mr-3 text-2xl">🔁</span>
+            <span class="gradient-text">3. Rinse And Repeat: Your Growth Accelerator</span>
+        </h2>
+        <p class="text-gray-600 mb-6">This is the most critical factor in scaling. When a topic or format is working, you need to keep doing it. Don't lose out on thousands of views and followers by moving on too quickly. Analyze your content and double down on your winners.</p>
+        <h3 class="font-semibold text-lg mb-4">Scenario: Identify Your Winning Formula</h3>
+        <p class="text-gray-600 mb-4">You're a gaming influencer. Looking at your last 5 videos, which content type should you focus on?</p>
+        <ul class="list-disc list-inside bg-gray-50 p-4 rounded-lg mb-6 text-gray-700">
+            <li>"Top 5 Easter Eggs in Game X" - <span class="font-bold text-green-600">150,000 views</span></li>
+            <li>"My New Gaming Chair Review" - 15,000 views</li>
+            <li>"Funniest Glitches in Game X" - <span class="font-bold text-green-600">180,000 views</span></li>
+            <li>"Unboxing New Controller" - 20,000 views</li>
+            <li>"Hidden Lore of Game X Explained" - <span class="font-bold text-green-600">250,000 views</span></li>
+        </ul>
+        <div id="repeat-quiz">
+            <label class="quiz-option"><input type="radio" name="repeat-choice" class="hidden"> More "Let's Play" videos.</label>
+            <label class="quiz-option"><input type="radio" name="repeat-choice" class="hidden"> Unboxing and reviewing more gaming hardware.</label>
+            <label class="quiz-option correct-answer"><input type="radio" name="repeat-choice" class="hidden"> A series on secrets, lore, and facts about "Game X".</label>
+        </div>
+        <p id="repeat-feedback" class="mt-4 text-center font-medium hidden"></p>
+    </section>
+
+    <section class="card">
+        <h2 class="card-header">
+            <span class="mr-3 text-2xl">🔗</span>
+            <span class="gradient-text">4. Engineer Sharable Content</span>
+        </h2>
+        <p class="text-gray-600 mb-6">Shares are the currency of viral growth. They are a powerful signal to the algorithm that your content is valuable. Instead of just hoping for shares, you can engineer your content to be share-worthy from the start. Here are some proven formats.</p>
+        <h3 class="font-semibold text-lg mb-4">5 Examples of Highly Sharable Content</h3>
+        <ul class="space-y-4 text-gray-700">
+            <li class="flex items-start">
+                <span class="mr-3 text-xl">😂</span>
+                <div><strong class="font-semibold text-gray-900">Relatable Skits:</strong> Create a short video acting out a common struggle or funny moment your audience experiences. People share what they relate to.</div>
+            </li>
+            <li class="flex items-start">
+                <span class="mr-3 text-xl">💡</span>
+                <div><strong class="font-semibold text-gray-900">A "Game-Changing" Hack:</strong> Share a unique tip, trick, or shortcut that solves a common problem for your audience. Valuable content gets shared.</div>
+            </li>
+            <li class="flex items-start">
+                <span class="mr-3 text-xl">😲</span>
+                <div><strong class="font-semibold text-gray-900">Controversial Takes:</strong> Post your opinion on a popular debate within your niche (e.g., "Is breakfast the most important meal? The truth..."). This sparks discussion and shares from both sides.</div>
+            </li>
+            <li class="flex items-start">
+                <span class="mr-3 text-xl">💪</span>
+                <div><strong class="font-semibold text-gray-900">Inspirational Transformations:</strong> Showcase a compelling before-and-after story. It could be a fitness journey, a room makeover, or a business success. These stories inspire and create connection.</div>
+            </li>
+            <li class="flex items-start">
+                <span class="mr-3 text-xl">👇</span>
+                <div><strong class="font-semibold text-gray-900">"Tag a Friend Who..." Posts:</strong> Directly ask viewers to share by creating content around a prompt like, "Tag a friend who needs to hear this," or "Send this to someone who is bad at X."</div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <h2 class="card-header">
+            <span class="mr-3 text-2xl">👂</span>
+            <span class="gradient-text">5. Your Audience is Your Compass</span>
+        </h2>
+        <p class="text-gray-600 mb-6">Your comments section is a goldmine. Ignoring your audience is like flying blind. Listen to their requests and feedback (the constructive kind!) to build a loyal community that feels valued, which will compound your growth over time.</p>
+        <h3 class="font-semibold text-lg mb-4">Scenario Analysis: What's the Real Feedback?</h3>
+        <p class="text-gray-600 mb-4">Click on the comments below that offer constructive feedback you should consider acting on.</p>
+        <div id="audience-quiz">
+            <div class="quiz-option" data-correct="false"><div class="quiz-icon"></div> "U R so cringe lol"</div>
+            <div class="quiz-option" data-correct="true"><div class="quiz-icon"></div> "Could you show a modification for this exercise? It's a bit too advanced for me."</div>
+            <div class="quiz-option" data-correct="false"><div class="quiz-icon"></div> "First comment! Love your vids!"</div>
+            <div class="quiz-option" data-correct="true"><div class="quiz-icon"></div> "The audio was really quiet in this one, I had to turn my volume all the way up. Maybe check the mic next time?"</div>
+            <div class="quiz-option" data-correct="false"><div class="quiz-icon"></div> "Why did you even post this? It's terrible."</div>
+        </div>
+    </section>
+
+    <footer class="text-center text-gray-500 py-8">
+        <p>You've completed the worksheet. Now go apply these principles and watch your community grow!</p>
+    </footer>
+</div>
+
+<script>
+    const goalButton = document.getElementById('goalButton');
+    const buttonText = document.getElementById('button-text');
+    const buttonIcon = document.getElementById('button-icon');
+    goalButton.addEventListener('click', () => {
+        if (!goalButton.classList.contains('set')) {
+            goalButton.classList.add('set');
+            buttonText.textContent = "Goal Set! Let's Go!";
+            buttonIcon.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>`;
+        }
+    }, { once: true });
+
+    function handleQuiz(quizContainerId) {
+        const quizContainer = document.getElementById(quizContainerId);
+        quizContainer.addEventListener('click', (e) => {
+            const option = e.target.closest('.quiz-option');
+            if (!option || option.classList.contains('answered')) return;
+            const isCorrect = option.dataset.correct === 'true';
+            const iconContainer = option.querySelector('.quiz-icon');
+            if (isCorrect) {
+                option.classList.add('correct');
+                if(iconContainer) iconContainer.textContent = '✅';
+            } else {
+                option.classList.add('incorrect');
+                if(iconContainer) iconContainer.textContent = '❌';
+            }
+            option.classList.add('answered');
+        });
+    }
+    handleQuiz('collab-quiz');
+    handleQuiz('audience-quiz');
+
+    const repeatQuiz = document.getElementById('repeat-quiz');
+    const repeatFeedback = document.getElementById('repeat-feedback');
+    repeatQuiz.addEventListener('change', (e) => {
+        const selectedLabel = e.target.closest('.quiz-option');
+        repeatQuiz.querySelectorAll('.quiz-option').forEach(label => {
+            label.classList.remove('correct', 'incorrect');
+        });
+        if (selectedLabel.classList.contains('correct-answer')) {
+            selectedLabel.classList.add('correct');
+            repeatFeedback.textContent = "Correct! The data clearly shows your audience loves deep dives into 'Game X'. Doubling down on this is your fastest path to growth.";
+            repeatFeedback.className = 'mt-4 text-center font-medium text-green-700';
+        } else {
+            selectedLabel.classList.add('incorrect');
+            repeatFeedback.textContent = "Not quite. While other content might work, the view counts overwhelmingly favor the 'Game X' deep dives. Always follow the data!";
+            repeatFeedback.className = 'mt-4 text-center font-medium text-red-700';
+        }
+    });
+</script>
+
+</body>
+</html>
